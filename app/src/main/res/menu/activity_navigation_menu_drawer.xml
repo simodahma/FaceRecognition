@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Add_student"
+            android:icon="@drawable/add_persen"
+            android:title="Add Student" />
+        <item
+            android:id="@+id/Recognise_Face"
+            android:icon="@drawable/think3"
+            android:title=" Mark Absence" />
+        <item
+            android:id="@+id/Manage_Student"
+            android:icon="@drawable/manage"
+            android:title="Manage Student" />
+        <item
+            android:id="@+id/Consult_Student"
+            android:icon="@drawable/view"
+            android:title="View result" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

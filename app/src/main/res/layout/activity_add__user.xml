@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add__user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.app.yarabisahl.Add_User">
+
+    <RelativeLayout
+        android:id="@+id/activity_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.app.yarabisahl.AddStudent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/teach2"
+            android:id="@+id/imageView9"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/E_Name" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            app:srcCompat="@android:color/holo_green_dark"
+            android:id="@+id/imageView7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.alimuzaffar.lib.widgets.AnimatedEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="User Name : "
+
+            android:inputType="textNoSuggestions"
+            app:animationType="fromRight"
+            app:animateCursor="true"
+            app:animateTextClear="true"
+            android:layout_marginLeft="11dp"
+            android:id="@+id/E_CneX"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/black"
+            android:textCursorDrawable="@android:color/holo_green_light"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="14dp"
+            android:layout_alignBottom="@+id/imageView9"
+            android:layout_alignStart="@+id/imageView7"
+            android:layout_marginStart="11dp" />
+
+        <com.alimuzaffar.lib.widgets.AnimatedEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Password :"
+            android:inputType="textNoSuggestions"
+            app:animationType="fromRight"
+            app:animateCursor="true"
+            app:animateTextClear="true"
+            android:id="@+id/E_Name"
+            android:cursorVisible="true"
+            android:textColorLink="@android:color/background_light"
+            android:textCursorDrawable="@android:color/holo_green_light"
+            android:password="true"
+            android:layout_below="@+id/imageView9"
+            android:layout_alignStart="@+id/E_CneX" />
+
+        <com.alimuzaffar.lib.widgets.AnimatedEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Email :"
+            android:inputType="textNoSuggestions"
+            app:animationType="fromRight"
+            app:animateCursor="true"
+            app:animateTextClear="true"
+            android:id="@+id/E_Fil"
+            android:textCursorDrawable="@android:color/holo_green_light"
+            android:layout_below="@+id/E_Name"
+            android:layout_alignStart="@+id/E_Name"
+            android:layout_marginTop="27dp" />
+
+        <TextView
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/Add_F"
+            android:background="@android:color/transparent"
+            android:text="Add Account"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
